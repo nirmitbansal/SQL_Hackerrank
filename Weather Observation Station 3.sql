@@ -1,0 +1,6 @@
+-- Problem: Weather Observation Station 3
+-- Platform: HackerRank
+-- Difficulty: Easy
+-- Link: https://www.hackerrank.com/challenges/weather-observation-station-3/problem?isFullScreen=true
+
+Select distinct city from station where id % 2 = 0;
