@@ -1,0 +1,11 @@
+-- Problem: Weather Observation Station 19
+-- Platform: HackerRank
+-- Link: https://www.hackerrank.com/challenges/weather-observation-station-19/problem?isFullScreen=true
+
+SELECT CAST(ROUND(
+    SQRT(
+        POWER(MAX(LAT_N) - MIN(LAT_N), 2) +
+        POWER(MAX(LONG_W) - MIN(LONG_W), 2)
+    ), 
+4) AS DECIMAL(10,4))
+FROM STATION;
